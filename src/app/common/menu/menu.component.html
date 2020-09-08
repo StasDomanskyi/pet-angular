@@ -4,8 +4,8 @@
   </div>
 
   <ul class="menu__list" *ngIf="isOpen">
-    <li class ="menu__item" *ngFor="let item of menu">
-      {{item}}
+    <li class ="menu__item" *ngFor="let page of menu" [routerLink]="page.link" routerLinkActive="active">
+      {{page.name}}
     </li>
   </ul>
 </div>
