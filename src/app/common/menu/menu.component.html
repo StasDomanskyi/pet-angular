@@ -1,0 +1,12 @@
+<div class="menu">
+  <div class="menu__button" (click)="showMenu()">
+
+  </div>
+
+  <ul class="menu__list" *ngIf="isOpen">
+    <li class ="menu__item" *ngFor="let item of menu">
+      {{item}}
+    </li>
+  </ul>
+</div>
+

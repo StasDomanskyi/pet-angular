@@ -1,0 +1,20 @@
+%wo-margin {
+  margin: 0;
+}
+
+.header {
+  @extend %wo-margin;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #fb6;
+
+  &__title {
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    color: #444;
+  }
+}
+
+
