@@ -5,11 +5,14 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { CityComponent } from './pages/city/city.component';
 
 const routes: Routes = [
-  
-  {path: 'home', component: HomeComponent },
+  {path: 'home', redirectTo: '', pathMatch: 'full'},
   {path: 'about-us', component: AboutUsComponent },
   {path: 'city', component: CityComponent },
-  {path: '', redirectTo: 'home', pathMatch: 'full' },
+  {
+    path: 'map', 
+    loadChildren: () => import('./modules/chart/chart.module').then(m => m.ChartModule),
+  },
+  {path: '', component: HomeComponent},
 ];
 
 @NgModule({

@@ -8,20 +8,16 @@ import { IMenu } from '../../interfaces/IMenu';
 export class MenuComponent implements OnInit {
   menu: IMenu = [
     {
-      name: 'Home',
-      link: 'home',
-    },
-    {
       name: 'About Us',
-      link: 'about-us',
+      link: '/about-us',
     },
     {
       name: 'Vinnytsia History',
-      link: 'city',
+      link: '/city',
     },
     {
       name: 'City Map',
-      link: 'map',
+      link: '/map',
     },
   ];
   isOpen: Boolean = false;
