@@ -1,0 +1,13 @@
+<h2>Friend List</h2>
+<p>All my friends live 
+  <a (click)="goToMap()">here</a>.
+</p>
+
+<ul>
+  <li *ngFor="let friend of friends">
+    <a [routerLink]="['../friend', 'friend.id']">{{friend.name}}</a>
+  </li>
+</ul>
+
+
+<a routerLink="../plans">Move to plans</a>

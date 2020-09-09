@@ -8,6 +8,10 @@ import { IMenu } from '../../interfaces/IMenu';
 export class MenuComponent implements OnInit {
   menu: IMenu = [
     {
+      name: 'Home',
+      link: 'home'
+    },
+    {
       name: 'About Us',
       link: '/about-us',
     },
@@ -18,6 +22,10 @@ export class MenuComponent implements OnInit {
     {
       name: 'City Map',
       link: '/map',
+    },
+    {
+      name: 'Rxjs',
+      link: '/rxjs',
     },
   ];
   isOpen: Boolean = false;

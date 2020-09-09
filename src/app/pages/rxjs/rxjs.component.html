@@ -1,0 +1,30 @@
+<h1>RxJS</h1>
+
+<article>
+  <h2>ajax</h2>
+  <input #link value="https://jsonplaceholder.typicode.com/posts/1">
+  <button (click)="launchAjax(link.value)">ajax</button>
+  <div *ngIf="ajax$">{{ ajax$ | async }}</div>
+</article>
+<hr />
+<article>
+  <h2>of</h2>
+  <button (click)="launchOf()">of</button>
+  <div *ngIf="ofResult$">{{ ofResult$ | async }}</div>
+</article>
+<hr />
+<article>
+  <h2>interval</h2>
+  <button (click)="launchInterval()">interval</button>
+  <div *ngIf="interval$">
+    <p>{{ interval$ | async}}</p>
+  </div>
+</article>
+
+<article>
+  <h2>interval</h2>
+  <button (click)="launchInterval()">interval</button>
+  <div *ngIf="interval$">
+    <p>{{ interval$ | async}}</p>
+  </div>
+</article>
